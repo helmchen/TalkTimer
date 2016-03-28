@@ -23,6 +23,9 @@
 		CA54DAB11CA94F39000499F2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA54DAB01CA94F39000499F2 /* NotificationController.swift */; };
 		CA54DAB31CA94F39000499F2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA54DAB21CA94F39000499F2 /* ComplicationController.swift */; };
 		CA54DAB51CA94F39000499F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA54DAB41CA94F39000499F2 /* Assets.xcassets */; };
+		CA54DACB1CA950B2000499F2 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA54DACA1CA950B2000499F2 /* SessionType.swift */; };
+		CA54DACD1CA95112000499F2 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA54DACC1CA95112000499F2 /* Talk.swift */; };
+		CA54DACF1CA95120000499F2 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA54DACE1CA95120000499F2 /* Speaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		CA54DAB21CA94F39000499F2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		CA54DAB41CA94F39000499F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA54DAB61CA94F39000499F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA54DACA1CA950B2000499F2 /* SessionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		CA54DACC1CA95112000499F2 /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		CA54DACE1CA95120000499F2 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +180,9 @@
 				CA54DA781CA94F39000499F2 /* Assets.xcassets */,
 				CA54DA7A1CA94F39000499F2 /* LaunchScreen.storyboard */,
 				CA54DA7D1CA94F39000499F2 /* Info.plist */,
+				CA54DACA1CA950B2000499F2 /* SessionType.swift */,
+				CA54DACC1CA95112000499F2 /* Talk.swift */,
+				CA54DACE1CA95120000499F2 /* Speaker.swift */,
 			);
 			path = TalkTimer;
 			sourceTree = "<group>";
@@ -426,6 +435,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA54DA741CA94F39000499F2 /* ViewController.swift in Sources */,
+				CA54DACD1CA95112000499F2 /* Talk.swift in Sources */,
+				CA54DACF1CA95120000499F2 /* Speaker.swift in Sources */,
+				CA54DACB1CA950B2000499F2 /* SessionType.swift in Sources */,
 				CA54DA721CA94F39000499F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TalkTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.helmchen.TalkTimer;
@@ -668,6 +681,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TalkTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.helmchen.TalkTimer;
