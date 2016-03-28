@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Speaker" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isMe" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="holds" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Talk" inverseName="isHoldBy" inverseEntity="Talk" syncable="YES"/>
+    </entity>
+    <entity name="Talk" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inProgress" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="template" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="topic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contains" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Talk" inverseName="isPartOf" inverseEntity="Talk" syncable="YES"/>
+        <relationship name="isHoldBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Speaker" inverseName="holds" inverseEntity="Speaker" syncable="YES"/>
+        <relationship name="isPartOf" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Talk" inverseName="contains" inverseEntity="Talk" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Speaker" positionX="-281" positionY="-159" width="128" height="118"/>
+        <element name="Talk" positionX="-11" positionY="-244" width="128" height="178"/>
+    </elements>
+</model>

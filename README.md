@@ -2,4 +2,4 @@
 
 More to come soon.
 
-see [Homepage](talktimer.ch)
+see [Homepage](http://talktimer.ch)
